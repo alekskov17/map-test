@@ -24,7 +24,7 @@ class _MapWState extends State<MapW> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Map"),
+          title: const Text("Map"),
         ),
         body: YandexMap(
             scale: 4,

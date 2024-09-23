@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yandex_maps_mapkit/init.dart' as init;
 import 'map.dart';
+import 'map_route.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -91,7 +92,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       )
                     },
-                child: Text("Open map"))
+                child: const Text("Open map")),
+            TextButton(
+                onPressed: () => {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => FullMap(
+                            id_trip: "37281",
+                          ),
+                        ),
+                      )
+                    },
+                child: const Text("Open route"))
           ],
         ),
       ),
