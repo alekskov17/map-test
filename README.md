@@ -1,4 +1,4 @@
-# yandex_test
+# map_test
 
 A new Flutter project.
 
